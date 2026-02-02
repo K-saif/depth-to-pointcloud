@@ -1,0 +1,10 @@
+opencv-python
+pyyaml
+open3d
+numpy
+scipy
+scikit-image
+matplotlib
+loguru
+pycpd
+openvino
