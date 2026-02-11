@@ -26,8 +26,9 @@ depth-to-pointcloud/
 ├── object_clustering.py                           # Cluster objects using DBSCAN
 ├── Point_Cloud_Registration_using_Open3D.ipynb    # ICP registration tutorial notebook
 ├── data/
-│   ├── pcd/                                       # Point cloud data files (.pcd)
-│   └── pcl/                                       # Additional point cloud files
+│   ├── depth/                                     # Depth image files
+│   ├── rgb/                                       # Color image files
+│   └── pcd/                                       # point cloud files
 └── requirements.txt                               # Python dependencies
 ```
 
@@ -189,17 +190,3 @@ Contributions are welcome! Please follow these steps:
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-- [Open3D](http://www.open3d.org/) - An Open Source Library for 3D Data Processing
-- [NumPy](https://numpy.org/) - The fundamental package for array computing
-- [Matplotlib](https://matplotlib.org/) - Visualization library for Python
-- [PrimeSense](https://www.primesense.com/) - For default camera intrinsic parameters
-
-## References
-- [Open3D Documentation](https://www.open3d.org/docs/latest/)
-- [Open3D ICP Registration Tutorial](https://www.open3d.org/html/tutorial/Basic/icp_registration.html)
-- [Point Cloud Registration](https://en.wikipedia.org/wiki/Point_cloud)
-
-## Contact
-For any inquiries, issues, or suggestions, please open an issue on GitHub or contact the project maintainers.

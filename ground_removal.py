@@ -2,7 +2,7 @@ import open3d as o3d
 import numpy as np
 
 # 1. Load your PCD file
-pcd = o3d.io.read_point_cloud("/home/medprime/Music/depth-to-pointcloud/data/pcd/cloud_bin_0.pcd")
+pcd = o3d.io.read_point_cloud("/data/pcd/cloud_bin_0.pcd")
 
 # 2. Downsample to speed up the RANSAC process
 # 2cm voxels are usually enough to maintain plane accuracy

@@ -13,8 +13,8 @@ import numpy as np
 
 
 # Read color and depth images
-color_raw = o3d.io.read_image("/Downloads/livingroom1-color/00006.jpg")
-depth_raw = o3d.io.read_image("/Downloads/livingroom1-depth-clean/00006.png")
+color_raw = o3d.io.read_image("/livingroom1-color/00006.jpg")
+depth_raw = o3d.io.read_image("/livingroom1-depth-clean/00006.png")
 
 # Create RGBD image
 # Default conversion: color is converted to grayscale and normalized [0, 1]
@@ -70,6 +70,6 @@ o3d.visualization.draw_geometries([pcd])
 
 
 # Assuming you have a point cloud object named 'pcd'
-o3d.io.write_point_cloud("/Music/depth-to-pointcloud/data/pcl/00006.pcd", pcd)
+o3d.io.write_point_cloud("/data/pcd/00006.pcd", pcd)
 
 

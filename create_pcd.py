@@ -24,5 +24,5 @@ def save_frame_as_pcd(color_path, depth_path, output_filename, intrinsics):
 intrinsics = o3d.camera.PinholeCameraIntrinsic(640, 480, 525.0, 525.0, 319.5, 239.5)
 
 # Save the two frames the tutorial expects
-save_frame_as_pcd("/Downloads/livingroom1-color/00000.jpg", "/Downloads/livingroom1-depth-clean/00000.png", "/Music/depth-to-pointcloud/data/pcd/cloud_bin_0.pcd", intrinsics)
-save_frame_as_pcd("/Downloads/livingroom1-color/00001.jpg", "/Downloads/livingroom1-depth-clean/00001.png", "/Music/depth-to-pointcloud/data/pcd/cloud_bin_1.pcd", intrinsics)
+save_frame_as_pcd("/livingroom1-color/00000.jpg", "/livingroom1-depth-clean/00000.png", "/data/pcd/cloud_bin_0.pcd", intrinsics)
+save_frame_as_pcd("/livingroom1-color/00001.jpg", "/livingroom1-depth-clean/00001.png", "/data/pcd/cloud_bin_1.pcd", intrinsics)
